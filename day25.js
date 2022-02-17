@@ -6,13 +6,23 @@
 
 function isPrime(num) {
     console.log(num % 2==1)
-if( num% 2 == 1 && num%3 >=1 && num > 1){
+if( num < 0){
+    return " this is a negative number"
+}
+if(num <= 2 && num > 0){
+     return num + " is prime"
+    }
+
+if( num% 2 == 1){
+    return  num + " is prime"
+
+} if(num%3 >=1){
     return  num + " is prime"
 }
 else {
    return num + " is not prime"
 }  
   }
- console.log(isPrime(1))
+ console.log(isPrime(70))
   
   
